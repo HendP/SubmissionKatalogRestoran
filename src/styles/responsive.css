@@ -1,18 +1,126 @@
-/* 48em = 768px */
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-@media (min-width: 48em) {
-  header li {
-    float: left;
+  .navigation {
+    display: flex;
+    margin-right: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
   }
-  header li a {
-    padding: 20px 30px;
+
+  .navigation li {
+    margin: 0;
+    background-color: #f73859;
   }
-  header .navigation {
-    clear: none;
-    float: right;
-    max-height: none;
+
+  .navigation-links {
+    margin-left: 30px;
   }
-  header .hamburger-icon {
+
+  .title {
+    margin-top: 5px;
+  }
+
+  .navigation-toggle {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title{
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  .navigation{
+    margin-top: 0;
+  }
+
+  .hero-text{
+    margin-top: 60px;
+  }
+
+  .hero-title{
+    font-size: 42px;
+  }
+
+  .hero-tagline{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title{
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .hero-title{
+    font-size: 36px;
+  }
+
+  .hero-tagline{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .title{
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .hero-text{
+    margin-top: 60px;
+  }
+
+  .hero-title{
+    font-size: 36px;
+  }
+
+  .hero-tagline{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title{
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  .hero-text{
+    margin-top: 60px;
+  }
+
+  .hero-title{
+    font-size: 32px;
+  }
+
+  .hero-tagline{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .title{
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  .hero-text{
+    margin-top: 60px;
+  }
+
+  .hero-title{
+    font-size: 24px;
+  }
+
+  .hero-tagline{
+    font-size: 12px;
   }
 }

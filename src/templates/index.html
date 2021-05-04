@@ -13,21 +13,32 @@
   </head>
   <body>
     <header>
-      <h1 class="title">Belfast Restaurant</h1>
-      <input class="hamburger-btn" type="checkbox" id="hamburger-btn" />
-      <label class="hamburger-icon" for="hamburger-btn"
-        ><span class="navicon"></span
-      ></label>
-      <ul class="navigation">
-        <li><a href="http://localhost:8080/">Home</a></li>
-        <li><a href="#">Favorite</a></li>
-        <li><a href="https://github.com/HendP" target="_blank">About Us</a></li>
+      <a href="#" class="title">Belfast Restaurant</a>
+
+      <ul class="navigation" id="navigation-menu">
+        <li>
+          <a href="http://localhost:8080/" class="navigation-links">Home</a>
+        </li>
+        <li><a href="#" class="navigation-links">Favorite</a></li>
+        <li>
+          <a
+            href="https://github.com/HendP"
+            class="navigation-links"
+            target="_blank"
+            >About Us</a
+          >
+        </li>
       </ul>
+
+      <span class="navigation-toggle" id="navigation-toggle-menu">
+        ☰
+      </span>
+
     </header>
     <div class="hero-image">
       <div class="hero-text">
-        <p class="tagline1">Good food and great vibes</p>
-        <p class="tagline2">So the only thing we're serious about is food</p>
+        <h1 class="hero-title">Good food and great vibes</h1>
+        <p class="hero-tagline">So the only thing we're serious about is food</p>
       </div>
     </div>
   </body>
