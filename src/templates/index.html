@@ -12,8 +12,11 @@
     />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Menuju ke konten</a>
     <header>
       <a href="#" class="title">Hungry Clinic</a>
+
+      <a href="#" class="navigation-toggle" id="navigation-toggle-menu"> ☰ </a>
 
       <ul class="navigation" id="navigation-menu">
         <li>
@@ -29,8 +32,6 @@
           >
         </li>
       </ul>
-
-      <span class="navigation-toggle" id="navigation-toggle-menu"> ☰ </span>
     </header>
     <div class="hero-image">
       <div class="hero-text">
@@ -40,14 +41,23 @@
         </p>
       </div>
     </div>
-    <main>
+    <main id="main-content">
       <h1 class="catalogs-title">Catalog Restaurant</h1>
-      <hr>
-      <ul class="catalogs">
-      </ul>
+      <hr />
+      <ul class="catalogs"></ul>
     </main>
+    <button onclick="toTop()" id="go-to-top" title="Go to top">
+      Top
+    </button>
     <footer>
-      <h4>Copyright © 2020 - Hungry Clinic</h4>
+      <h4>Copyright © 2021 - Hungry Clinic</h4>
     </footer>
   </body>
+  <script>
+    // because this function doesn't work in the original script after import in index.js, so it's moved here
+    function toTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </html>

@@ -15,7 +15,7 @@ if (data.restaurants && data.restaurants.length > 0) {
         <li class="catalog-item">
           <div class="catalog">
             <div class="catalog-image">
-              <img src="${element.pictureId}" />
+              <img src="${element.pictureId}" alt="Catalog's Image"/>
               <div class="top-left">${element.city}</div>
               <div class="top-left-under catalog-rating">Rating: ${element.rating}</div>
             </div>

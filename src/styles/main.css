@@ -14,6 +14,21 @@ html {
   height: 100%;
 }
 
+/* Skip to Content */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #f73859;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* header */
 
 header {
@@ -63,6 +78,7 @@ header {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
   font-size: 24px;
+  text-decoration: none;
 }
 
 /* show/hide navigation */
@@ -141,7 +157,7 @@ img {
   font-weight: 600;
 }
 
-.top-left-under{
+.top-left-under {
   position: absolute;
   background-color: #f73859;
   top: 60px;
@@ -151,6 +167,8 @@ img {
   font-size: 18px;
   font-weight: 600;
 }
+
+/* Catalog */
 
 .catalogs {
   display: flex;
@@ -225,4 +243,27 @@ footer h4 {
   font-weight: 500;
   margin: 0 auto;
   display: inline-block;
+}
+
+/* Button Back to Top */
+#go-to-top {
+  display: none;
+  background-color: #f73859;
+  color: white;
+  padding: 15px;
+  position: fixed;
+  border-radius: 0.25rem;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#go-to-top:hover {
+  background-color: white;
+  color: #f73859;
+  border: 1px solid #f73859;
 }
