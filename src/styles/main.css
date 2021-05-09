@@ -56,6 +56,7 @@ header {
 }
 
 .navigation li {
+  font-size: 18px;
   text-align: center;
   padding: 10px 10px;
   background-color: #e72b4a;
@@ -63,6 +64,7 @@ header {
 
 .title {
   font-size: 32px;
+  height: 45px;
   font-weight: bold;
   display: inline-block;
   color: white;
@@ -72,8 +74,12 @@ header {
 }
 
 .navigation-toggle {
+  background: none;
+  border: none;
+  width: 44px;
+  height: 44px;
   position: absolute;
-  top: 25px;
+  top: 20px;
   right: 20px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);

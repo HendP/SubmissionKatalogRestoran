@@ -13,9 +13,9 @@ if (data.restaurants && data.restaurants.length > 0) {
     data.restaurants.forEach(element => {
         catalogItem += `
         <li class="catalog-item">
-          <div class="catalog">
+          <div class="catalog" tabindex="0">
             <div class="catalog-image">
-              <img src="${element.pictureId}" alt="Catalog's Image"/>
+              <img src="${element.pictureId}" alt="Catalog's Restaurant"/>
               <div class="top-left">${element.city}</div>
               <div class="top-left-under catalog-rating">Rating: ${element.rating}</div>
             </div>
